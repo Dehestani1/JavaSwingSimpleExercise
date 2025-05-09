@@ -16,6 +16,7 @@ public class E1 extends JFrame implements ActionListener {
         setLayout(new BorderLayout());
         add(counterLable, BorderLayout.CENTER);
         add(clickButton, BorderLayout.SOUTH);
+
     }
     public void actionPerformed(ActionEvent e) {
         counter++;
