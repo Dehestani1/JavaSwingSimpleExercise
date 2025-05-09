@@ -8,6 +8,7 @@ public class E1 extends JFrame implements ActionListener {
     private JButton clickButton;
     private int counter;
     public E1() {
+
         setTitle("Click Counter");
         counterLable = new JLabel("Clicks = 0", SwingConstants.CENTER);
         setSize(500, 500);
