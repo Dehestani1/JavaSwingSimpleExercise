@@ -3,12 +3,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class E3 extends JFrame implements ActionListener {
+public class Main extends JFrame implements ActionListener {
     private JPanel mainPanel;
     private JButton redButton;
     private JButton greenButton;
     private JButton blueButton;
-    public E3() {
+    public Main() {
+        setSize(800, 600);
+        setResizable(false);
         setTitle("Theme Color Selector");
 
         mainPanel = new JPanel();
@@ -43,6 +45,6 @@ public class E3 extends JFrame implements ActionListener {
         }
     }
     public  static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new E3().setVisible(true));
+        SwingUtilities.invokeLater(() -> new Main().setVisible(true));
     }
 }
